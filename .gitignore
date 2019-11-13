@@ -1,0 +1,6 @@
+.venv
+.vscode
+secret
+__pycache__
+sample.py
+*.pem
