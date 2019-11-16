@@ -4,3 +4,5 @@ secret
 __pycache__
 sample.py
 *.pem
+*.DS_Store
+*.pyc
