@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    {% for service in srvcs %}
+        <h1>{{ service.service_name }}</h1>
+        <p>This is {{ service.service_type }} type of service</p>
+        <p>and has {{ service.Available_resources }} as available resources</p> 
+    {% endfor %}
+</body>
+</html>
