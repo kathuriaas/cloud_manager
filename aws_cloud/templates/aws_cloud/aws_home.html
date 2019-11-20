@@ -1,13 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
+{% extends "aws_cloud/aws_base.html" %}
+{% block content %}
     {% for service in srvcs %}
-        <h1>{{ service.service_name }}</h1>
-        <p>This is {{ service.service_type }} type of service</p>
-        <p>and has {{ service.Available_resources }} as available resources</p> 
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ service.service_name }}</a>
+              <small class="text-muted">{{ service.service_type}}</small>
+            </div>
+            <h2><a class="article-title" href="#">{{ service.Available_resources }}</a></h2>
+          </div>
+        </article>
     {% endfor %}
-</body>
-</html>
+{% endblock content %}
