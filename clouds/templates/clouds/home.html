@@ -1,0 +1,14 @@
+{% extends "clouds/base.html" %}
+{% block content %}
+    {% for service in srvcs %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ service.service_name }}</a>
+              <small class="text-muted">{{ service.service_type}}</small>
+            </div>
+            <h2><a class="article-title" href="#">{{ service.Available_resources }}</a></h2>
+          </div>
+        </article>
+    {% endfor %}
+{% endblock content %}
