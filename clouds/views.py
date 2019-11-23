@@ -17,7 +17,7 @@ def home(request):
     context={
         'srvcs' : services
     }
-    return render(request,'aws_cloud/aws_home.html',context)
+    return render(request,'clouds/home.html',context)
 
 def about(request):
-    return render(request,'aws_cloud/aws_about.html')
+    return render(request,'clouds/about.html')
